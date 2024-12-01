@@ -26,7 +26,7 @@ const Product = ({
       payload: { ...product, quantity: 1 },
     });
 
-  const itemInCart = inCart ? "Item successfully added to cart" : null;
+  const itemInCart = inCart ? " (Item successfully added to cart)" : null;
 
   return (
     <article className="product">
