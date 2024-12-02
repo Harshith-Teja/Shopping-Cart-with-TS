@@ -18,7 +18,7 @@ const Product = ({
   const img: string = new URL(`../images/${product.sku}.jpg`, import.meta.url)
     .href;
 
-  console.log(img);
+  //console.log(img);
 
   const onAddToCart = () =>
     dispatch({

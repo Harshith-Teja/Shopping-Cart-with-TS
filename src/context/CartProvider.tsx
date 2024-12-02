@@ -44,11 +44,11 @@ const reducer = (
         (item) => item.sku === sku
       );
 
-      const qty: number = itemExists ? itemExists.quantity + 1 : 1;
+      const quantity: number = itemExists ? itemExists.quantity + 1 : 1;
 
       return {
         ...state,
-        cart: [...filteredCart, { sku, name, price, quantity: qty }],
+        cart: [...filteredCart, { sku, name, price, quantity }],
       };
     }
     case REDUCER_ACTION_TYPE.REMOVE: {
